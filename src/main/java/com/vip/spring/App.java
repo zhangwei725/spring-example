@@ -16,15 +16,15 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  * 三种方式
  * 1. xml注册
  * 2. 基于注解
- *
  * ApplicationContext
  *
  */
 public class App {
 
+
     public static void main(String[] args) {
         //  初始化容器
-        ClassPathXmlApplicationContext context =     new ClassPathXmlApplicationContext("applicationContext1.xml");
+        ClassPathXmlApplicationContext context =   new ClassPathXmlApplicationContext("applicationContext1.xml");
 //                                       new FileSystemXmlApplicationContext();
                                          new AnnotationConfigApplicationContext();
 
